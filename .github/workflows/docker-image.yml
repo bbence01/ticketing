@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./hellomvc/Dockerfile
+          file: ./ticketing/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/hellomvc:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/ticketing:latest
